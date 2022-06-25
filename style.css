@@ -1,0 +1,343 @@
+html{
+font-family: 'Titan One';
+font-family: 'Poppins', sans-serif !important;
+}
+
+
+a{
+transition: .5s;
+text-decoration: none;
+}
+
+/* sidebar */
+.sidebar{
+position: fixed;
+height: 100%;
+width: 299px;
+background-color: #000;
+padding-top: 40px;
+}
+
+.sidebar h1{
+color: #FFF;
+font-size: 14px;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+.sidebar a:hover{
+color: #006599;
+}
+
+.sidebar li{
+padding: 20px;
+}
+
+li a{
+color:#FFF;
+font-weight: 700;
+letter-spacing: 1px;
+
+}
+
+.sidebar-container{
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width: 200px;
+}
+
+.logo-bike{
+width: 140px;
+height: 80px;
+display: block;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+}
+
+h1{
+font-family: 'Titan One';
+}
+
+/* conteúdo */
+.content{
+position: absolute;
+left: 300px;
+width: calc(100% - 300px);
+}
+
+.content h1, .content h2{
+color: #006599;
+margin-bottom: 30px;
+}
+
+.content h1{
+font-size: 48px;
+}
+
+.content h2{
+font-size: 35px;
+}
+
+section{
+padding-left: 50px;    
+}
+
+/*bem vindo*/
+#sessao-bemvindo{
+padding-left: 0;
+}
+
+.sessao-bemvindo-content{
+padding-left: 50px;
+}
+
+#sessao-bemvindo .banner{
+height: 500px;
+background-image: url(./img/bike_banner_new_banner.jpg);
+background-position: center;
+background-size: cover;
+margin-top: -125px;
+}
+
+#sessao-bemvindo h1{
+margin-top: 70px;
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after{
+content: "";
+display: block;
+clear: both;
+margin-bottom: 100px;
+}
+
+.sessao-minibanner{
+width: 300px;
+height: 400px;
+background-image: url(./img/bike_content_2.jpg);
+background-position: center;
+background-size: cover;
+float: left;
+}
+
+.sessao-descricao{
+position: absolute;
+left: 370px;
+padding-right: 30px;
+}
+
+.sessao-descricao p{
+line-height: 2;
+font-size: 14px;
+text-align: justify;
+}
+
+.sessao-bemvindo-btn, form input[type=submit]{
+background-color: #006599;
+color: #FFF;
+text-decoration: none;
+padding: 20px 40px;
+transition: .5s;
+display: block;
+width: 100px;
+text-align: center;
+border: none;
+cursor: pointer;
+}
+
+.sessao-bemvindo-btn:hover, form input[type=submit]:hover{
+background-color: #2790C6;
+}
+
+/*sessao sobre*/
+#sessao-sobre .sessao-minibanner{
+float: right;
+margin-right: 50px;
+background-image: url(./img/bike_content_3.jpg);
+}
+
+#sessao-sobre .sessao-descricao{
+position: absolute;
+left: 25px;
+width: calc(100% - 400px);
+}
+
+/*galerias*/
+.banner-galeria{
+background-position: center;
+background-size: cover;
+display: inline-block;
+height: 150px;
+}
+
+#sessao-doces1, #sessao-doces2, #sessao-doces3{
+padding-right: 50px;
+margin-bottom: 50px;
+}
+
+.bike1-imgs{
+width: 18.7%;
+margin-left: .5%;
+margin-right: .5%;
+}
+
+#img1{
+background-image: url(./img/bike_galeria.jpg);
+margin-left: 0;
+}
+
+#img2{
+background-image: url(./img/bike_galeria1.jpg);
+}
+
+#img3{
+background-image: url(./img/bike_galeria2.jpg);
+}
+
+#img4{
+background-image: url(./img/bike_galeria3.jpg);
+}
+
+#img5{
+background-image: url(./img/bike_galeria4.jpg);
+margin-right: 0;
+}
+
+
+.bike2-imgs{
+width: 31.9%;
+margin-left: .5%;
+margin-right: .5%;
+}
+
+#img6{
+background-image: url(./img/bike_banner_new.jpg);
+margin-left: 0;
+}
+
+#img7{
+background-image: url(./img/bike_banner_new1.jpg);
+}
+
+#img8{
+background-image: url(./img/bike_banner_new.jpg);
+margin-right: 0;
+}
+
+.bike3-imgs{
+width: 23.8%;
+height: 350px;
+margin-left: .5%;
+margin-right: .5%;
+}
+
+#img9{
+background-image: url(./img/bike_final1.jpg);
+margin-left: 0;
+}
+
+#img10{
+background-image: url(./img/bike_final5.jpg);
+}
+
+#img11{
+background-image: url(./img/bike_final3.jpg);
+}
+    
+#img12{
+background-image: url(./img/bike_final4.jpg);
+margin-right: 0;
+}
+
+/* contato */
+
+#form-contato{
+width: 500px;
+}
+
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea{
+display: block;
+border: 1px solid #006599;
+padding: 10px;
+margin-bottom: 20px;
+width: 100%;
+font-size: 16px;
+}
+
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus{
+border-color: #2790C6;
+}
+
+#form-contato textarea{
+height: 150px;
+}
+
+#form-contato::placeholder{
+color: #2790C6;
+}
+
+#form-contato input[type=submit]{
+margin-left: 0;
+font-size: 16px;
+width: 180px;
+}
+
+/* footer */
+/*footer{
+height: 100px;
+padding-top: 150px;
+color: #006599;
+}
+
+footer p{
+text-align: center;
+font-weight: bold;
+}*/
+
+.content footer{
+margin-top: 20px;
+background-color: #2791c654;
+top: 10px;
+width: 100%;
+height: 20px;
+}
+
+footer p{
+text-align: center;
+color: #000;
+font-weight: 700;
+font-size: 14px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
